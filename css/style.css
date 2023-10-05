@@ -5,283 +5,18 @@
     padding: 0;
 }
 
-/* ----------HEADER---------- */
-/*
-.button{
-    background-color: pink;
-    border: 2px solid black;
-}
-
-.navbar{
-    background-color: black;
-    display: grid;
-    position: absolute;
-}
-
-.nav-link{
-    color: pink !important;
-}
-
-body main section h2{
-    justify-content: center;
-    align-items: center;
-}
-
-.messibesandocopa{
-    justify-content: center;
-    align-items: center;
-}
-
-header nav img{
-    height: 70px;
-    width: 70px;
-}
-
-.bg-body-tertiary{
-    background-color: black !important;
-}
-
-.vidapersonal{
-    width: 100%;
-    height: calc(100vh + 450px);
-    color: white;
-    text-align: center;
-    background-image: url(../img/messijugadordelpartido.jpg);
-    background-size: cover;
-    background-position: center ;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding: 10px;
-    display: grid;
-    grid-template-rows: 300px 550px 450px;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    text-align: center;
-    align-items: center;
-    font-size: 25px;
-}
-
-.textouno{
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.imagenuno{
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.videouno{
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.textodos{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-}
-
-header{
-    background-color: black;
-    text-align: center;
-}
-
-header h1{
-    color: pink;
-    font-size: 60px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bolder;
-    text-align: center;
-}
-
-header nav ul{
-    list-style: none;
-    font-size: 30px;
-}
-
-header nav ul li{
-    display: inline-block; */
-    /* margin-right: 10px; */
-    /* margin: 5px 10px 5px 10px;
-}
-
-header nav ul li a{
-    text-decoration: none;
-    color: white;
-}
-
-h2{
-    color: pink;
-} */
-
-/* ----------MAIN---------- */
-
-/* .hero{
-    width: 100%;
-    height: calc(100vh - 113px);
-    color: white;
-    text-align: center;
-    background-image: url(../img/messijugadordelpartido.jpg);
-    background-size: cover;
-    background-position: center ;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.hero p{
-    font-size: 30px;
-}
-
-.hero h2{
-    font-size: 80px;
-}
-
-.bienvenido{
-    background-color: black;
-}
-
-.palmares{
-    background-color: black;
-    display: block;
-    align-items: center;
-}
-
-.palmares div img{
-    align-items: center;
-}
-
-.bienvenido h2{
-    color: pink;
-    font-size: 100px;
-    text-align: center;
-}
-
-.messi{
-    background-color: black;;
-    text-align: center;
-}
-
-.messi div img{
-    width: 800px;
-    height:50vh;
-    justify-content: center;
-    align-items: center;
-}
-
-.messi h2{
-    color: pink
-}
-
-.records{
-    display: flex;
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-}
-
-.carrera{
-    width: 100%;
-    color: white;
-    text-align: center;
-    height: calc(100vh - 113px);
-    background-image: url(../img/messijugadordelpartido.jpg);
-    background-size: cover;
-    background-position: center ;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-size: 25px;
-}
-
-.vidapersonal div h2{
-    padding: 10px;
-    color: pink;
-    font-size: 30px;
-}
-
-.vidapersonal div p{
-    padding: 10px;
-    color: white;
-    font-size: 25px;
-}
-
-#pie{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    background-color: pink;
-    height: 25vh;
-    align-items: center;
-    bottom: 0;
-} */
-/* ----------FOOTER---------- */
-
-
-/* header{
-    display: flex;
-}
-
-.main-index{
-    display: grid;
-}
-
-header nav{
-    width: 100%;
-    height: 70px;
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    background-color: pink;
-    font-size: 50px;
-    justify-content: space-between;
-}
-
-header nav div a{
-    text-decoration: none;
-    justify-content: space-between;
-    padding: 15px;
-}
-
-.main-index{
-    background-image: url(../img/messijugadordelpartido.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: cover;
-    background-attachment: fixed;
-    align-items: center;
-    text-align: center;
-    font-size: 50px;
-    color: white;
-}
-
-.main-index img{
-    border-radius: 5%;
-}
-
-.footer-index{
-    display: flex;
-    background-color: pink;
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    align-items: center;
-} */
-
 .grid-contenedor{
     display: grid;
     width: 100%;
     font-size: 20px;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 240px 100px 700px 150px;
+    position: relative;
     grid-template-areas:
-    "header header"
-    "nav nav"
-    "main main"
-    "footer footer";
+    "header"
+    "nav"
+    "main"
+    "footer";
 }
 
 .grid-vidapersonal{
@@ -289,7 +24,7 @@ header nav div a{
     width: 100%;
     font-size: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 240px 100px 1400px 150px;
+    grid-template-rows: 240px 100px 1250px 150px;
     position: relative;
     min-height: 100%;
     grid-template-areas:
@@ -304,13 +39,53 @@ header nav div a{
     width: 100%;
     font-size: 20px;
     grid-template-columns: 1fr;
-    grid-template-rows: 240px 100px 500px 150px;
+    grid-template-rows: 240px 100px 1150px 150px;
     position: relative;
+    min-height: 100%;
     grid-template-areas:
     "header"
     "nav"
     "main"
     "footer";
+}
+
+.grid-palmares{
+    display: grid;
+    width: 100%;
+    font-size: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 240px 100px 1510px 150px;
+    position: relative;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+
+.principal-palmares{
+    background-color: black;
+    grid-area: main;
+    width: 100%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    background-image: url(../img/messijugadordelpartido.jpg);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.objetos-palmares{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 800px 800px;
+    align-items: center;
+    text-align: center;
+    grid-template-areas:
+    "txtpalmares imgpalmares"
+    "imgpalmaresdos txtpalmaresdos"
 }
 
 header{
@@ -335,33 +110,7 @@ header nav img{
     width: cover;
 }
 
-.encabezado-vidapersonal{
-    background-color: black;
-    grid-area: header;
-    align-items: center;
-    text-align: center;
-    width: cover;
-}
-
-.encabezado-carrera{
-    background-color: black;
-    grid-area: header;
-    align-items: center;
-    text-align: center;
-    width: cover;
-}
-
 .navegacion{
-    background-color: pink;
-    grid-area: nav;
-}
-
-.navegacion-vidapersonal{
-    background-color: pink;
-    grid-area: nav;
-}
-
-.navegacion-carrera{
     background-color: pink;
     grid-area: nav;
 }
@@ -370,7 +119,11 @@ header nav img{
     size: 100px 100px;
 }
 
-.principal{
+.principal-index{
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
     background-color: black;
     grid-area: main;
     width: 100%;
@@ -399,6 +152,7 @@ header nav img{
 }
 
 .principal-carrera{
+    padding-top: 50px;
     background-color: black;
     grid-area: main;
     width: 100%;
@@ -415,7 +169,7 @@ header nav img{
 .objetos{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 700px 700px;
+    grid-template-rows: 625px 625px;
     align-items: center;
     text-align: center;
     grid-template-areas:
@@ -423,14 +177,57 @@ header nav img{
     "textodos video"
 }
 
-.objetos div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.objetos-carrera{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px 625px;
+    align-items: center;
+    text-align: center;
+    grid-template-areas:
+    "texto"
+    "video"
+}
+
+.texto-goles{
+    grid-area: texto;
+}
+
+.video-goles{
+    grid-area: video;
+}
+
+.distin-indi{
+    grid-area: imgpalmares;
+    size-adjust: auto;
+}
+
+.distinciones-individuales{
+    grid-area: txtpalmares;
+}
+
+.distinciones-colectivas{
+    grid-area: txtpalmaresdos;
+}
+
+.distin-cole{
+    grid-area: imgpalmaresdos;
+}
+
+.distin-cole{
+    size-adjust: auto;
+}
+
+.distin-indi{
+    size-adjust: auto;
+}
+
+.messibesandocopa{
+    size-adjust: auto;
 }
 
 .imagenuno{
     grid-area: imagen;
+    size-adjust: auto;
 }
 
 .textouno{
@@ -456,7 +253,24 @@ main h2{
     text-align: center;
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1266px){
+}
+.principal-index{
+    font-size: 16px;
+    width: 100%;
+    margin: 10;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 340px 200px;
+    grid-template-areas:
+    "textouno"
+    "imagen"
+    "textodos"
+    "video";
+}
+
+@media screen and (max-width: 1508px){
     .objetos{
         font-size: 16px;
         width: 100%;
@@ -464,73 +278,122 @@ main h2{
         align-items: center;
         text-align: center;
         grid-template-columns: 1fr;
-        grid-template-rows: 300px 700px 250px 500px;
+        grid-template-rows: 300px 384px 251px 350px;
         grid-template-areas:
         "textouno"
         "imagen"
         "textodos"
         "video";
     }
+    .imagenuno img{
+        width: 50%;
+    }
 }
+
+@media screen and (max-width: 950px){
+    .objetos{
+        font-size: 15px;
+        width: 100%;
+        margin: 10;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 250px 287px 272px;
+        grid-template-areas:
+        "textouno"
+        "imagen"
+        "textodos"
+        "video";
+    }
+    .imagenuno img{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .messicopa{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .objetos-palmares{
+        font-size: 15px;
+        width: 100%;
+        margin: 10;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 250px 287px 272px;
+        grid-template-areas:
+        "textpalmares"
+        "imgpalmares"
+        "textpalmaresdos"
+        "imgpalmaresdos";
+    }
+    .distin-indi{
+        width: 250px;
+    }
+    .distin-cole{
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .messicopa{
+        width: 330px;
+    }
+}
+
 
 @media screen and (max-width: 560px){
     .objetos{
-        font-size: 16px;
+        font-size: 13px;
         width: 100%;
         margin: 0;
         align-items: center;
         text-align: center;
         grid-template-columns: 100%;
-        grid-template-rows: 300px 700px 250px 400px;
-        margin-bottom: 160px;
+        grid-template-rows: 330px 253px 264px 400px;
         grid-template-areas:
-        "textouno"
-        "imagen"
-        "textodos"
-        "video";
+            "textouno"
+            "imagen"
+            "textodos"
+            "video";
+    }
+    .videouno iframe{
+        width: 350px;
     }
 }
 
 @media screen and (max-width: 520px){
-    .pie-carrera{
-        position: absolute;
-        bottom: 0;
-    }
-    .grid.carrera{
+    .principal-carrera{
+        padding-top: 20px;
+        width: 100%;
+        font-size: 13px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 240px 100px 500px 150px;
         position: relative;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer"
+    }
+    .grid-carrera{
+        grid-template-rows: 240px 100px 965px 150px;
+    }
+    .video-goles iframe{
+        width: 350px;
+        height:  202px;
     }
 }
 
-.pie{
+footer{
     background-color: pink;
     grid-area: footer;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.pie-vidapersonal{
-    background-color: pink;
-    grid-area: footer;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    margin-top: auto;
-}
-
-.pie-carrera{
-    background-color: pink;
-    grid-area: footer;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
 }
