@@ -1,0 +1,30 @@
+.encabezado{
+    background-color: black;
+    grid-area: header;
+    align-items: center;
+    text-align: center;
+    width: cover;
+}
+
+.navegacion{
+    background-color: pink;
+    grid-area: nav;
+}
+
+.navbar-brand{
+    size: 100px 100px;
+}
+
+header{
+    z-index: 1;
+    img{
+        height: 240px;
+        object-fit: cover;
+    }
+    nav{
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+}

@@ -1,0 +1,155 @@
+@media screen and (max-width: 1266px){
+.principal-index{
+    font-size: 16px;
+    width: 100%;
+    margin: 10;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 350px 340px 200px;
+    grid-template-areas:
+    "textouno"
+    "imagen"
+    "textodos"
+    "video";
+    }
+}
+
+@media screen and (max-width: 1508px){
+    .objetos{
+        font-size: 16px;
+        width: 100%;
+        margin: 10;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 384px 251px 350px;
+        grid-template-areas:
+        "textouno"
+        "imagen"
+        "textodos"
+        "video";
+    }
+    .imagenuno img{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .objetos{
+        font-size: 15px;
+        width: 100%;
+        margin: 10;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 250px 287px 272px;
+        grid-template-areas:
+        "textouno"
+        "imagen"
+        "textodos"
+        "video";
+    }
+    .imagenuno img{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .messicopa{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .objetos-palmares {
+    font-size: 25px;
+    width: 100%;
+    margin: 10;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 188px 281px 350px 455px;
+    grid-template-areas:
+        "txtpalmares"
+        "imgpalmares"
+        "txtpalmaresdos"
+        "imgpalmaresdos";
+}
+    .distin-indi {
+        width: 400px; }
+    .distin-cole {
+        width: 400px;
+        height: 500px;
+    }
+    }
+
+@media screen and (max-width: 450px) {
+    .distin-indi {
+        width: 340px; }
+    .distin-cole {
+        width: 340px;
+        height: 450px; } }
+
+@media screen and (max-width: 1500px) {
+    .distin-indi {
+        width: 475px;
+        height: 350px; }
+    }
+
+@media screen and (max-width: 800px) {
+    .imgrecords {
+        width: 346.5px;
+        height: 392.4px;
+    }
+    }
+
+@media screen and (max-width: 400px){
+    .messicopa{
+        width: 330px;
+    }
+}
+
+
+@media screen and (max-width: 560px){
+    .objetos{
+        font-size: 13px;
+        width: 100%;
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        grid-template-columns: 100%;
+        grid-template-rows: 330px 253px 264px 400px;
+        grid-template-areas:
+            "textouno"
+            "imagen"
+            "textodos"
+            "video";
+    }
+    .videouno iframe{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .principal-carrera{
+        padding-top: 20px;
+        width: 100%;
+        font-size: 13px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 240px 100px 500px 150px;
+        position: relative;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer"
+    }
+    .grid-carrera{
+        grid-template-rows: 240px 100px 965px 150px;
+    }
+    .video-goles iframe{
+        width: 350px;
+        height:  202px;
+    }
+}
