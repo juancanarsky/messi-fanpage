@@ -88,13 +88,12 @@ header {
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 50px;
-  background-color: black;
   grid-area: main;
   width: 100%;
   color: white;
   text-align: center;
   align-items: center;
-  background-image: url(../img/messijugadordelpartido.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)), url(../img/messijugadordelpartido.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -107,7 +106,7 @@ header {
   color: white;
   text-align: center;
   align-items: center;
-  background-image: url(../img/messijugadordelpartido.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)), url(../img/messijugadordelpartido.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -121,7 +120,7 @@ header {
   color: white;
   text-align: center;
   align-items: center;
-  background-image: url(../img/messijugadordelpartido.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)), url(../img/messijugadordelpartido.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -134,7 +133,7 @@ header {
   color: white;
   text-align: center;
   align-items: center;
-  background-image: url(../img/messijugadordelpartido.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)), url(../img/messijugadordelpartido.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -148,7 +147,7 @@ header {
   color: white;
   text-align: center;
   align-items: center;
-  background-image: url(../img/messijugadordelpartido.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)), url(../img/messijugadordelpartido.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -228,6 +227,17 @@ header {
   grid-template-rows: 800px 800px;
   grid-template-areas: "txtpalmares imgpalmares" "imgpalmaresdos txtpalmaresdos"; }
 
+.principal-camisetas {
+  display: flex; }
+
+.objetos-camisetas img {
+  height: 320px;
+  width: 320px; }
+
+main h1 {
+  align-items: center;
+  text-align: center; }
+
 main h2 {
   align-items: center;
   text-align: center; }
@@ -269,7 +279,7 @@ footer {
     align-items: center;
     text-align: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 400px 250px 287px 272px;
+    grid-template-rows: 400px 230px 328px 272px;
     grid-template-areas: "textouno" "imagen" "textodos" "video"; }
   .imagenuno img {
     width: 70%; } }
@@ -286,7 +296,7 @@ footer {
     align-items: center;
     text-align: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 188px 281px 350px 455px;
+    grid-template-rows: 250px 315px 355px 460px;
     grid-template-areas: "txtpalmares" "imgpalmares" "txtpalmaresdos" "imgpalmaresdos"; }
   .distin-indi {
     width: 400px; }
