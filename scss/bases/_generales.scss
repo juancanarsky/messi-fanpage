@@ -36,8 +36,8 @@
     display: grid;
     width: 100%;
     font-size: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 240px 100px 1250px 150px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 240px 100px 1700px 150px;
     position: relative;
     min-height: 100%;
     grid-template-areas:
@@ -45,6 +45,21 @@
     "nav nav"
     "main main"
     "footer footer";
+}
+
+.grid-botines{
+    display: grid;
+    width: 100%;
+    font-size: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 240px 100px 900px 150px;
+    position: relative;
+    min-height: 100%;
+    grid-template-areas:
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
 }
 
 .grid-carrera{

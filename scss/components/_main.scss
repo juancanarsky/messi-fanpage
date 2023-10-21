@@ -180,6 +180,9 @@
 }
 
 .principal-camisetas{
+    background-color: black;
+    grid-area: main;
+    width: 100%;
     color: white;
     text-align: center;
     align-items: center;
@@ -188,8 +191,21 @@
     background-position: center ;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    }
+}
 
+.principal-botines{
+    background-color: black;
+    grid-area: main;
+    width: 100%;
+    color: white;
+    text-align: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)), url(../img/messijugadordelpartido.jpg);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 .objetos-camisetas{
     display: flex;
@@ -197,52 +213,39 @@
     align-items: center;
     height: 1600px;
     flex-wrap: wrap;
-    flex-direction: column;
 }
 
-.camiseta-intertitular{
+.objetos-botines{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 750px;
+    flex-wrap: wrap;
+}
+
+.camiseta{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 
-.camiseta-intersuplente{
+.botines{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-}
-
-.camiseta-barcelona{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.camiseta-psg{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.camiseta-selecciontitular{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.camiseta-seleccionsuplente{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 
 .objetos-camisetas div{
+    display: flex;
+    justify-content: space-around;
+    height: 410px;
+    border: 3px solid black;
+    border-radius: 90;
+    flex-direction: column;
+    background-color: pink;
+}
+
+.objetos-botines div{
     display: flex;
     justify-content: space-around;
     height: 410px;
@@ -257,8 +260,19 @@
     width: 320px;;
 }
 
+.objetos-botines img{
+    height: 320px;
+    width: 320px;;
+}
+
 .objetos-camisetas h3{
-    font-size: 25px;
+    font-size: 22px;
+    color: black;
+    margin: 5px;
+}
+
+.objetos-botines h3{
+    font-size: 22px;
     color: black;
     margin: 5px;
 }
@@ -271,6 +285,20 @@
     padding: 5px;
     border: 1px solid black;
     border-radius: 10%;
+}
+
+.objetos-botines div a{
+    text-decoration: none;
+    background-color: black;
+    color: pink;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+
+.productos-disponibles{
+    padding-top: 70px;
 }
 
 main{

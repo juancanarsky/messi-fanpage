@@ -153,3 +153,62 @@
         height:  202px;
     }
 }
+@media screen and (max-width: 1052px){
+    .grid-camisetas{
+        display: grid;
+        width: 100%;
+        font-size: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 240px 100px 2200px 150px;
+        position: relative;
+        min-height: 100%;
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+    .productos-disponibles{
+        font-size: 25px;
+    }
+    .objetos-camisetas{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+}
+
+@media screen and (max-width: 752px){
+    .grid-camisetas{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 240px 100px 3900px 150px;
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+}
+}
+
+@media screen and (max-width: 978px){
+    .grid-botines{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 240px 100px 1050px 150px;
+        grid-template-areas:
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+}
+}
+
+@media screen and (max-width: 651px){
+    .grid-botines{
+        grid-template-columns: 1fr;
+        grid-template-rows: 240px 100px 1400px 150px;
+        grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer";
+}
+}

@@ -25,11 +25,21 @@
   display: grid;
   width: 100%;
   font-size: 20px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 240px 100px 1250px 150px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 240px 100px 1700px 150px;
   position: relative;
   min-height: 100%;
   grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
+
+.grid-botines {
+  display: grid;
+  width: 100%;
+  font-size: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 240px 100px 900px 150px;
+  position: relative;
+  min-height: 100%;
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
 
 .grid-carrera {
   display: grid;
@@ -238,6 +248,22 @@ header {
   grid-template-areas: "txtpalmares imgpalmares" "imgpalmaresdos txtpalmaresdos"; }
 
 .principal-camisetas {
+  background-color: black;
+  grid-area: main;
+  width: 100%;
+  color: white;
+  text-align: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)), url(../img/messijugadordelpartido.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.principal-botines {
+  background-color: black;
+  grid-area: main;
+  width: 100%;
   color: white;
   text-align: center;
   align-items: center;
@@ -252,46 +278,35 @@ header {
   justify-content: space-around;
   align-items: center;
   height: 1600px;
-  flex-wrap: wrap;
-  flex-direction: column; }
+  flex-wrap: wrap; }
 
-.camiseta-intertitular {
+.objetos-botines {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 750px;
+  flex-wrap: wrap; }
+
+.camiseta {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column; }
+  justify-content: center; }
 
-.camiseta-intersuplente {
+.botines {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-
-.camiseta-barcelona {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-
-.camiseta-psg {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-
-.camiseta-selecciontitular {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
-
-.camiseta-seleccionsuplente {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column; }
+  justify-content: center; }
 
 .objetos-camisetas div {
+  display: flex;
+  justify-content: space-around;
+  height: 410px;
+  border: 3px solid black;
+  border-radius: 90;
+  flex-direction: column;
+  background-color: pink; }
+
+.objetos-botines div {
   display: flex;
   justify-content: space-around;
   height: 410px;
@@ -304,8 +319,17 @@ header {
   height: 320px;
   width: 320px; }
 
+.objetos-botines img {
+  height: 320px;
+  width: 320px; }
+
 .objetos-camisetas h3 {
-  font-size: 25px;
+  font-size: 22px;
+  color: black;
+  margin: 5px; }
+
+.objetos-botines h3 {
+  font-size: 22px;
   color: black;
   margin: 5px; }
 
@@ -317,6 +341,18 @@ header {
   padding: 5px;
   border: 1px solid black;
   border-radius: 10%; }
+
+.objetos-botines div a {
+  text-decoration: none;
+  background-color: black;
+  color: pink;
+  font-size: 20px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 10%; }
+
+.productos-disponibles {
+  padding-top: 70px; }
 
 main h1 {
   align-items: center;
@@ -440,3 +476,37 @@ footer {
   .video-goles iframe {
     width: 350px;
     height: 202px; } }
+
+@media screen and (max-width: 1052px) {
+  .grid-camisetas {
+    display: grid;
+    width: 100%;
+    font-size: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 240px 100px 2200px 150px;
+    position: relative;
+    min-height: 100%;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
+    .grid-camisetas .productos-disponibles {
+      font-size: 25px; }
+    .grid-camisetas .objetos-camisetas {
+      margin-left: 50px;
+      margin-right: 50px; } }
+
+@media screen and (max-width: 752px) {
+  .grid-camisetas {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 240px 100px 3900px 150px;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer"; } }
+
+@media screen and (max-width: 978px) {
+  .grid-botines {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 240px 100px 1050px 150px;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer"; } }
+
+@media screen and (max-width: 651px) {
+  .grid-botines {
+    grid-template-columns: 1fr;
+    grid-template-rows: 240px 100px 1400px 150px;
+    grid-template-areas: "header" "nav" "main" "footer"; } }
