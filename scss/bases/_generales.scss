@@ -32,6 +32,21 @@
     "footer footer";
 }
 
+.grid-camisetas{
+    display: grid;
+    width: 100%;
+    font-size: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 240px 100px 1250px 150px;
+    position: relative;
+    min-height: 100%;
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "main main"
+    "footer footer";
+}
+
 .grid-carrera{
     display: grid;
     width: 100%;

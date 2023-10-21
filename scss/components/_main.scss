@@ -85,7 +85,7 @@
 .objetos-carrera{
     @extend %grid-center;
     grid-template-columns: 1fr;
-    grid-template-rows: 150px 625px;
+    grid-template-rows: 270px 550px;
     grid-template-areas:
     "texto"
     "video"
@@ -180,21 +180,110 @@
 }
 
 .principal-camisetas{
+    color: white;
+    text-align: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)), url(../img/messijugadordelpartido.jpg);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
+
+.objetos-camisetas{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 1600px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.camiseta-intertitular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.camiseta-intersuplente{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.camiseta-barcelona{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.camiseta-psg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.camiseta-selecciontitular{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.camiseta-seleccionsuplente{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.objetos-camisetas div{
+    display: flex;
+    justify-content: space-around;
+    height: 410px;
+    border: 3px solid black;
+    border-radius: 90;
+    flex-direction: column;
+    background-color: pink;
 }
 
 .objetos-camisetas img{
     height: 320px;
-    width: 320px;
+    width: 320px;;
+}
+
+.objetos-camisetas h3{
+    font-size: 25px;
+    color: black;
+    margin: 5px;
+}
+
+.objetos-camisetas div a{
+    text-decoration: none;
+    background-color: black;
+    color: pink;
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10%;
 }
 
 main{
     h1{
         align-items: center;
         text-align: center;
+        font-size: 75px;
+        color: pink;
     }
     h2{
         align-items: center;
         text-align: center;
+        color: pink;
+        font-size: 50px;
     }
 }
