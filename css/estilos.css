@@ -7,9 +7,9 @@
   width: 100%;
   font-size: 20px;
   grid-template-columns: 1fr;
-  grid-template-rows: 240px 100px 700px 150px;
+  grid-template-rows: 240px 100px 775px 150px;
   position: relative;
-  grid-template-areas: "header" "nav" "main" "footer"; }
+  grid-template-areas: "header" "nav" "main" "footer"; }
 
 .grid-vidapersonal {
   display: grid;
@@ -19,7 +19,7 @@
   grid-template-rows: 240px 100px 1250px 150px;
   position: relative;
   min-height: 100%;
-  grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
+  grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
 
 .grid-camisetas {
   display: grid;
@@ -29,7 +29,7 @@
   grid-template-rows: 240px 100px 1700px 150px;
   position: relative;
   min-height: 100%;
-  grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
+  grid-template-areas: "header header" "nav nav" "main main" "footer footer"; }
 
 .grid-botines {
   display: grid;
@@ -39,7 +39,7 @@
   grid-template-rows: 240px 100px 900px 150px;
   position: relative;
   min-height: 100%;
-  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
+  grid-template-areas: "header header header" "nav nav nav" "main main main" "footer footer footer"; }
 
 .grid-carrera {
   display: grid;
@@ -49,7 +49,7 @@
   grid-template-rows: 240px 100px 1150px 150px;
   position: relative;
   min-height: 100%;
-  grid-template-areas: "header" "nav" "main" "footer"; }
+  grid-template-areas: "header" "nav" "main" "footer"; }
 
 .grid-records {
   display: grid;
@@ -59,7 +59,7 @@
   grid-template-rows: 240px 100px 1150px 150px;
   position: relative;
   min-height: 100%;
-  grid-template-areas: "header" "nav" "main" "footer"; }
+  grid-template-areas: "header" "nav" "main" "footer"; }
 
 .grid-palmares {
   display: grid;
@@ -68,7 +68,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 240px 100px 1510px 150px;
   position: relative;
-  grid-template-areas: "header" "nav" "main" "footer"; }
+  grid-template-areas: "header" "nav" "main" "footer"; }
 
 footer {
   display: flex;
@@ -176,17 +176,17 @@ header {
 .objetos {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 625px 625px;
-  grid-template-areas: "imagen textouno" "textodos video"; }
+  grid-template-areas: "imagen textouno" "textodos video"; }
 
 .objetos-carrera {
   grid-template-columns: 1fr;
   grid-template-rows: 270px 550px;
-  grid-template-areas: "texto" "video"; }
+  grid-template-areas: "texto" "video"; }
 
 .objetos-records {
   grid-template-columns: 1fr;
   grid-template-rows: 150px 1000px;
-  grid-template-areas: "textorecords" "imagenrecords"; }
+  grid-template-areas: "textorecords" "imagenrecords"; }
 
 .records {
   grid-area: textorecords; }
@@ -245,7 +245,7 @@ header {
 .objetos-palmares {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 800px 800px;
-  grid-template-areas: "txtpalmares imgpalmares" "imgpalmaresdos txtpalmaresdos"; }
+  grid-template-areas: "txtpalmares imgpalmares" "imgpalmaresdos txtpalmaresdos"; }
 
 .principal-camisetas {
   background-color: black;
@@ -278,7 +278,8 @@ header {
   justify-content: space-around;
   align-items: center;
   height: 1600px;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  padding: 100px; }
 
 .objetos-botines {
   display: flex;
@@ -364,7 +365,7 @@ main h2 {
   align-items: center;
   text-align: center;
   color: pink;
-  font-size: 50px; }
+  font-size: 35px; }
 
 footer {
   background-color: pink;
@@ -382,6 +383,10 @@ footer {
     grid-template-rows: 350px 340px 200px;
     grid-template-areas: "textouno" "imagen" "textodos" "video"; } }
 
+@media screen and (max-width: 500px) {
+  .lugar {
+    font-size: 20px; } }
+
 @media screen and (max-width: 1508px) {
   .objetos {
     font-size: 16px;
@@ -390,7 +395,7 @@ footer {
     align-items: center;
     text-align: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 300px 384px 251px 350px;
+    grid-template-rows: 300px 384px 251px 290px;
     grid-template-areas: "textouno" "imagen" "textodos" "video"; }
   .imagenuno img {
     width: 50%; } }
@@ -403,7 +408,7 @@ footer {
     align-items: center;
     text-align: center;
     grid-template-columns: 1fr;
-    grid-template-rows: 400px 230px 328px 272px;
+    grid-template-rows: 400px 230px 328px 260px;
     grid-template-areas: "textouno" "imagen" "textodos" "video"; }
   .imagenuno img {
     width: 70%; } }
@@ -457,10 +462,14 @@ footer {
     align-items: center;
     text-align: center;
     grid-template-columns: 100%;
-    grid-template-rows: 330px 253px 264px 400px;
+    grid-template-rows: 360px 253px 264px 400px;
     grid-template-areas: "textouno" "imagen" "textodos" "video"; }
   .videouno iframe {
     width: 350px; } }
+
+@media screen and (max-width: 750px) {
+  .goles-messi {
+    font-size: 35px; } }
 
 @media screen and (max-width: 520px) {
   .principal-carrera {
@@ -477,6 +486,17 @@ footer {
     width: 350px;
     height: 202px; } }
 
+@media screen and (max-width: 1180px) {
+  .grid-camisetas {
+    display: grid;
+    width: 100%;
+    font-size: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 240px 100px 2400px 150px;
+    position: relative;
+    min-height: 100%;
+    grid-template-areas: "header header" "nav nav" "main main" "footer footer"; } }
+
 @media screen and (max-width: 1052px) {
   .grid-camisetas {
     display: grid;
@@ -491,7 +511,8 @@ footer {
       font-size: 25px; }
     .grid-camisetas .objetos-camisetas {
       margin-left: 50px;
-      margin-right: 50px; } }
+      margin-right: 50px;
+      padding: 0px; } }
 
 @media screen and (max-width: 752px) {
   .grid-camisetas {

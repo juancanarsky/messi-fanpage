@@ -77,27 +77,21 @@
     @extend %grid-center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 625px 625px;
-    grid-template-areas:
-    "imagen textouno"
-    "textodos video"
+    grid-template-areas:"imagen textouno""textodos video"
 }
 
 .objetos-carrera{
     @extend %grid-center;
     grid-template-columns: 1fr;
     grid-template-rows: 270px 550px;
-    grid-template-areas:
-    "texto"
-    "video"
+    grid-template-areas:"texto""video"
 }
 
 .objetos-records{
     @extend %grid-center;
     grid-template-columns: 1fr;
     grid-template-rows: 150px 1000px;
-    grid-template-areas:
-    "textorecords"
-    "imagenrecords"
+    grid-template-areas:"textorecords""imagenrecords"
 }
 
 .records{
@@ -174,9 +168,7 @@
     @extend %grid-center;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 800px 800px;
-    grid-template-areas:
-    "txtpalmares imgpalmares"
-    "imgpalmaresdos txtpalmaresdos"
+    grid-template-areas:"txtpalmares imgpalmares""imgpalmaresdos txtpalmaresdos"
 }
 
 .principal-camisetas{
@@ -213,6 +205,7 @@
     align-items: center;
     height: 1600px;
     flex-wrap: wrap;
+    padding: 100px;
 }
 
 .objetos-botines{
@@ -312,6 +305,6 @@ main{
         align-items: center;
         text-align: center;
         color: pink;
-        font-size: 50px;
+        font-size: 35px;
     }
 }
