@@ -7,7 +7,7 @@
   width: 100%;
   font-size: 20px;
   grid-template-columns: 1fr;
-  grid-template-rows: 240px 100px 775px 150px;
+  grid-template-rows: 240px 100px 1000px 150px;
   position: relative;
   grid-template-areas: "header" "nav" "main" "footer"; }
 
@@ -75,7 +75,7 @@ footer {
   justify-content: center;
   align-items: center; }
 
-.objetos, .objetos-carrera, .objetos-records, .objetos-palmares {
+.objetos, .objetos-carrera {
   display: grid;
   text-align: center;
   align-items: center; }
@@ -105,7 +105,7 @@ header {
 
 .principal-index {
   padding-left: 20px;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 50px;
   padding-right: 50px;
   grid-area: main;
@@ -146,19 +146,6 @@ header {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
-.principal-palmares {
-  background-color: black;
-  grid-area: main;
-  width: 100%;
-  color: white;
-  text-align: center;
-  align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)), url(../img/messijugadordelpartido.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
-
 .principal-records {
   padding-top: 50px;
   background-color: black;
@@ -183,46 +170,21 @@ header {
   grid-template-rows: 270px 550px;
   grid-template-areas: "texto" "video"; }
 
-.objetos-records {
-  grid-template-columns: 1fr;
-  grid-template-rows: 150px 1000px;
-  grid-template-areas: "textorecords" "imagenrecords"; }
-
-.records {
-  grid-area: textorecords; }
-
-.imgrecords {
-  grid-area: imagenrecords; }
-
 .texto-goles {
   grid-area: texto; }
 
 .video-goles {
   grid-area: video; }
 
-.distin-indi {
-  grid-area: imgpalmares;
+.carousel-inner {
+  width: cover;
+  height: 600px;
   size-adjust: auto; }
 
-.distinciones-individuales {
-  grid-area: txtpalmares; }
-
-.distinciones-colectivas {
-  grid-area: txtpalmaresdos; }
-
-.distin-cole {
-  grid-area: imgpalmaresdos;
-  size-adjust: auto; }
-
-.distin-cole {
-  size-adjust: auto; }
-
-.distin-indi {
-  width: 700px;
-  height: 450px; }
-
-.messibesandocopa {
-  size-adjust: auto; }
+.carousel-item div {
+  size-adjust: auto;
+  width: 100%;
+  height: cover; }
 
 .imagenuno {
   grid-area: imagen;
@@ -240,12 +202,10 @@ header {
 .video-goles {
   align-items: center;
   text-align: center;
-  margin: 30px; }
-
-.objetos-palmares {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 800px 800px;
-  grid-template-areas: "txtpalmares imgpalmares" "imgpalmaresdos txtpalmaresdos"; }
+  margin: 30px;
+  animation-name: slidein;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in; }
 
 .principal-camisetas {
   background-color: black;
@@ -305,7 +265,12 @@ header {
   border: 3px solid black;
   border-radius: 90;
   flex-direction: column;
-  background-color: pink; }
+  background-color: pink;
+  transition: 0.5s; }
+
+.objetos-camisetas div:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 10px 10px black; }
 
 .objetos-botines div {
   display: flex;
@@ -314,7 +279,12 @@ header {
   border: 3px solid black;
   border-radius: 90;
   flex-direction: column;
-  background-color: pink; }
+  background-color: pink;
+  transition: 1s; }
+
+.objetos-botines div:hover {
+  transform: scale(1.1);
+  box-shadow: 10px 10px 10px 10px black; }
 
 .objetos-camisetas img {
   height: 320px;
@@ -353,7 +323,22 @@ header {
   border-radius: 10%; }
 
 .productos-disponibles {
-  padding-top: 70px; }
+  padding-top: 70px;
+  animation-name: slidein;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in; }
+
+.messititulo {
+  padding-top: 70px;
+  animation-name: slidein;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in; }
+
+.goles-messi {
+  padding-top: 70px;
+  animation-name: slidein;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in; }
 
 main h1 {
   align-items: center;
@@ -366,6 +351,31 @@ main h2 {
   text-align: center;
   color: pink;
   font-size: 35px; }
+
+.lio-messi {
+  padding-bottom: 30px; }
+
+.lugar {
+  padding-bottom: 30px; }
+
+.slide {
+  padding-left: 20px; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0;
+    width: 100%; } }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0;
+    width: 100%; } }
 
 footer {
   background-color: pink;

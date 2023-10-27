@@ -1,6 +1,6 @@
 .principal-index{
     padding-left: 20px;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 50px;
     padding-right: 50px;
     grid-area: main;
@@ -44,20 +44,6 @@
     background-attachment: fixed;
 }
 
-.principal-palmares{
-    background-color: black;
-    grid-area: main;
-    width: 100%;
-    color: white;
-    text-align: center;
-    align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0.349)), url(../img/messijugadordelpartido.jpg);
-    background-size: cover;
-    background-position: center ;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
 .principal-records{
     padding-top: 50px;
     background-color: black;
@@ -87,21 +73,6 @@
     grid-template-areas:"texto""video"
 }
 
-.objetos-records{
-    @extend %grid-center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 150px 1000px;
-    grid-template-areas:"textorecords""imagenrecords"
-}
-
-.records{
-    grid-area: textorecords;
-}
-
-.imgrecords{
-    grid-area: imagenrecords;
-}
-
 .texto-goles{
     grid-area: texto;
 }
@@ -110,35 +81,16 @@
     grid-area: video;
 }
 
-.distin-indi{
-    grid-area: imgpalmares;
+.carousel-inner{
+    width: cover;
+    height: 600px;
     size-adjust: auto;
 }
 
-.distinciones-individuales{
-    grid-area: txtpalmares;
-}
-
-.distinciones-colectivas{
-    grid-area: txtpalmaresdos;
-}
-
-.distin-cole{
-    grid-area: imgpalmaresdos;
+.carousel-item div{
     size-adjust: auto;
-}
-
-.distin-cole{
-    size-adjust: auto;
-}
-
-.distin-indi{
-    width: 700px;
-    height: 450px;
-}
-
-.messibesandocopa{
-    size-adjust: auto;
+    width: 100%;
+    height: cover;
 }
 
 .imagenuno{
@@ -162,13 +114,9 @@
     align-items: center;
     text-align: center;
     margin: 30px;
-}
-
-.objetos-palmares{
-    @extend %grid-center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 800px 800px;
-    grid-template-areas:"txtpalmares imgpalmares""imgpalmaresdos txtpalmaresdos"
+    animation-name: slidein;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
 }
 
 .principal-camisetas{
@@ -236,6 +184,12 @@
     border-radius: 90;
     flex-direction: column;
     background-color: pink;
+    transition: 0.5s;
+}
+
+.objetos-camisetas div:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px 10px black;
 }
 
 .objetos-botines div{
@@ -246,6 +200,12 @@
     border-radius: 90;
     flex-direction: column;
     background-color: pink;
+    transition: 1s;
+}
+
+.objetos-botines div:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px 10px black;
 }
 
 .objetos-camisetas img{
@@ -292,6 +252,23 @@
 
 .productos-disponibles{
     padding-top: 70px;
+    animation-name: slidein;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+
+.messititulo{
+    padding-top: 70px;
+    animation-name: slidein;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+}
+
+.goles-messi{
+    padding-top: 70px;
+    animation-name: slidein;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
 }
 
 main{
@@ -306,5 +283,39 @@ main{
         text-align: center;
         color: pink;
         font-size: 35px;
+    }
+}
+
+.lio-messi{
+    padding-bottom: 30px;
+}
+
+.lugar{
+    padding-bottom: 30px;
+}
+
+.slide{
+    padding-left: 20px;
+}
+
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+@keyframes slidein{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0;
+        width: 100%;
     }
 }
