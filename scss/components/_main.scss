@@ -87,6 +87,11 @@
     size-adjust: auto;
 }
 
+.slide{
+    padding-left: 20px;
+    height: 600px;
+}
+
 .carousel-item div{
     size-adjust: auto;
     width: 100%;
@@ -292,10 +297,6 @@ main{
 
 .lugar{
     padding-bottom: 30px;
-}
-
-.slide{
-    padding-left: 20px;
 }
 
 @keyframes slidein{

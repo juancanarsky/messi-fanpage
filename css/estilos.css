@@ -181,6 +181,10 @@ header {
   height: 600px;
   size-adjust: auto; }
 
+.slide {
+  padding-left: 20px;
+  height: 600px; }
+
 .carousel-item div {
   size-adjust: auto;
   width: 100%;
@@ -357,9 +361,6 @@ main h2 {
 
 .lugar {
   padding-bottom: 30px; }
-
-.slide {
-  padding-left: 20px; }
 
 @keyframes slidein {
   from {
@@ -541,3 +542,44 @@ footer {
     grid-template-columns: 1fr;
     grid-template-rows: 240px 100px 1400px 150px;
     grid-template-areas: "header" "nav" "main" "footer"; } }
+
+@media screen and (max-width: 1510px) {
+  .carousel-inner {
+    width: cover;
+    height: 400px;
+    size-adjust: auto; }
+  .slide {
+    height: 400px; } }
+
+@media screen and (max-width: 900px) {
+  .carousel-inner {
+    width: cover;
+    height: 300px;
+    size-adjust: auto; }
+  .slide {
+    height: 300px; } }
+
+@media screen and (max-width: 640px) {
+  .carousel-inner {
+    width: cover;
+    height: 225px;
+    size-adjust: auto; }
+  .slide {
+    height: 225px; } }
+
+@media screen and (max-width: 490px) {
+  .carousel-inner {
+    width: cover;
+    height: 175px;
+    size-adjust: auto; }
+  .slide {
+    height: 175px; } }
+
+@media screen and (max-width: 400px) {
+  .carousel-inner {
+    width: cover;
+    height: 150px;
+    size-adjust: auto; }
+  .slide {
+    height: 150px;
+    padding-left: 0; } }
